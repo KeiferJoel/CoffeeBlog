@@ -1,3 +1,47 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.querySelector(".loader");
+    const before_loader = document.querySelector("before_loader");
+
+
+    //arreglar bug del loader 
+
+    /*
+    if (before_loader){
+
+
+
+        setTimeout (() => {
+            before_loader.style.opacity = "0";
+            
+        });
+        
+    }
+
+*/
+
+    if (loader) {
+        // loader on top
+        loader.style.position = "fixed";
+        loader.style.zIndex = "9999";
+
+      /*loader.style.backgroundColor = "rgba(255, 235, 201, 1)";
+        loader.style.width = "100vw";
+        loader.style.height = "100vh";*/
+
+        // tiempo de espera
+        setTimeout(() => {
+            loader.style.opacity = "0";
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500); 
+        }, 3000); // Duración del loader en pantalla
+    }
+});
+
+
+
+
+
 const frases = [
     "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
     "Cada mañana es una nueva oportunidad para brillar.",
@@ -29,3 +73,4 @@ window.onload = function() {
     mostrarFraseAleatoria(); 
     setInterval(mostrarFraseAleatoria, 5000); 
 };
+
