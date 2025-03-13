@@ -230,7 +230,8 @@ a{
 
 
 .cards{
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     filter: blur(0px);
   }
 
@@ -238,7 +239,7 @@ a{
    /* box-shadow:  3px 6px 10px 0 rgba(0, 0, 0, 0.70);*/
     transform: scale(1.05);
     filter: blur(0px);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 1.95px 1.6px;
 }
 
 
@@ -491,7 +492,6 @@ color: #74372b;
   scale: 1;
   background-color: rgba(255, 235, 201, 1);
   background-size: 1px;
-
 }
 .loader .container {
   width: 300px;
