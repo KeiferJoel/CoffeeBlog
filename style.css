@@ -1,7 +1,6 @@
 
 
 body, html{
-    
     background-color: rgba(255, 235, 201, 1);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,17 +23,12 @@ body, html{
 .title_loader{
   color:#74372b;
   font-size: 50px;
-  
-
-
   font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
-
   font-style: normal;
   text-align: center;
   margin-top: 10px;
   transform: translateY(250px);
-  
 }
 
 /*\
@@ -68,8 +62,7 @@ Header
         margin:  0 20px 10px 0;
     /*  background-color: #3B3030; */
         padding: 0.3rem;
-        border-radius: 15px;
-        
+        border-radius: 15px;       
 }
 
 
@@ -81,51 +74,50 @@ a{
 }
 
 .navbar ul li:hover {
-  background: #D79771;
+  background: #B05B3B;
   transition: 0.4rem;
-
 }
 
 .content{
     background-color: rgba(215, 151, 113, 1);
-    padding: 50px 0;
-    text-align: center;
+    padding: 40px 0;
+
+  
+}
+
+.after_content, .principal_sub{
+  /* background-color: #664343; */
+  text-align: center;
+ 
 }
 
 .content_frase{
-  
     padding: 50px 0;
     text-align: center;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.content p, .principal_sub{
-    margin-left: 230px;
-    text-align: justify;
-    width: 670px;
-     
-}
 
 .principal_sub{
     font-size: 50px;
-    text-align:left ;
     color: rgba(246, 252, 223, 1);
    /*  background-color: black;*/
-   font-family: "Playwrite HU", cursive;
+   font-family: "Playwrite HU", cursive; 
     font-optical-sizing: auto;
-    padding-left: 18%;
-    margin-bottom: -22px;
+    margin-bottom: -24px;
 }
 
 .second_sub{
   font-size: 20px;
-  text-align:left ;
   color: rgba(246, 252, 223, 1);
  /*  background-color: black;*/
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
-  padding-left: 18%; 
+
+  text-align: left;
+  padding-left: 466px;
+  /* background-color: #666143; */
 }
 
 .gallery{
@@ -133,10 +125,11 @@ a{
 }
 
 .gallery .images{
-    gap: 80px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*background-color: #74372b; */
 }
 
 .gallery .images2{
@@ -156,6 +149,7 @@ a{
 
 
 /*para buyacoffee*/
+
 .content_img{
     position: relative;
     width: 100%;
@@ -195,6 +189,8 @@ a{
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
     transform: scale(1.05);
+    
+    
 }
 
 .text{
@@ -207,13 +203,14 @@ a{
 
   color: rgba(117, 52, 34, 1);
  /* background-color: #e3c414; */
-  margin: 55px 0 -40px 0;
-  padding-left: 64px ;
+  /**/ margin: 20px 0 -40px 0;
+  /*padding-left: -200px ; */
 
 }
 
 .beforegallery{
-  margin: 0 80px;
+  text-align: center;
+  margin: 0 40px;
  /* background-color: #000; */
 }
 
@@ -241,6 +238,7 @@ a{
    /* box-shadow:  3px 6px 10px 0 rgba(0, 0, 0, 0.70);*/
     transform: scale(1.05);
     filter: blur(0px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
@@ -722,21 +720,40 @@ footer {
 
 
 
+/*Responsivo*/
 
-
-
+/*
 
   @media screen and (min-width: 1024px) {
-    .content p, .principal_sub {
-        width: 800px;
+   
+    .principal_sub{
+      font-size: 30px;
+      padding-bottom: 5px;
     }
+
+    .second_sub{
+      font-size: 20px;
+    }
+    
+  
 }
 
+*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .content p, .principal_sub {
-        width: 600px;
+   
+    .principal_sub{
+      font-size: 20px;
+      padding-bottom: 10px;
     }
+
+      .second_sub{
+      padding-left: 312px;
+      margin-top:18px;
+      font-size: 10px;
+      
+    }
+
 
     .title {
         font-size: 40px;
@@ -745,25 +762,45 @@ footer {
     .gallery .images img, .gallery .images2 img {
         max-width: 300px;
     }
+
+  
 }
 
 
 @media screen and (max-width: 767px) {
-    .content p, .principal_sub {
+   /* .content p, .principal_sub {
         width: 90%;
+    }
+*/
+    .principal_sub{
+    
+      font-size: 10px;
+      
+    }
+
+    .second_sub{
+      padding-left: 288px;
+      margin-top:25px;
+      font-size: 5px;
+      
     }
 
     .title {
-        font-size: 30px;
+      font-size: 30px;
     }
 
     .navbar ul li {
-        display: block;
-        margin-bottom: 10px;
+      display: block;
+      margin-bottom: 10px;
     }
 
     .gallery .images img, .gallery .images2 img {
         max-width: 100%;
+    }
+
+    .content{
+      padding: 20px 0;
+      margin-left: -90px;
     }
 
 }
