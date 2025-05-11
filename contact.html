@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3054/3054889.png" type="image/x-icon">
     <title>Coffee Blog</title>
 </head>
 <body>
     <header class="header">
-
         <h1 class="title">Coffee Blog</h1>
-
         <section class="container">
-
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Start</a></li>
-                    <li><a href="buyacoffee.html">Buy a coffe</a></li>
-                    <li><a href="###">Contact</a></li>
+                    <li><a href="takeacoffee.html">Buy a coffe</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </section>
-    </header>
+    </head
     
     <section class="content">
        <article>
@@ -56,7 +53,6 @@
                       <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138130.png" alt="LinkedIn" title="LinkedIn"></li>
                     </a>
       
-      
                     <!--Youtube-->
                     <a href="https://www.youtube.com/channel/UCeAIx0CZb33MyhDJ66xsAEw" target="_blank">
                       <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138134.png" alt="Youtube" title="Youtube"></li>
@@ -66,79 +62,11 @@
                     <a href="https://www.instagram.com/keifer.joel/" target="_blank"> 
                       <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram" title="Instagram"></li>
                     </a>
-      
                   </ul>
                 </div>
               </div>
             </div>
-              <div class="card">
-              <div class="poster"><img src="https://images.pexels.com/photos/5380614/pexels-photo-5380614.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Roenny"></div>
-              <div class="details">
-                <h1>Roenny </h1>
-                <h2>Back-End • API • DEV</h2>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <span>Encargado del Back-End</span>
-                </div>
-                <div class="tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">Node.JS</span>
-                  <span class="tag">Phyton</span>
-                </div>
-                <p class="desc">
-                  Roenny es un apasionado del backend, dedicado a construir las bases sólidas que sustentan las aplicaciones. 
-                </p>
-                <div class="cast">
-                  <h3>Redes</h3>
-                  <ul>
-                    <a href=" " target="_black">
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138130.png" alt="LinkedIn" title="LinkedIn"></li>
-                  </a>
-                    <a href="https://www.instagram.com/roennyalmonte?utm_source=qr&igsh=MWZ2ZWRnOXAzY2JwbQ=="target="_black">
-                      
-                      <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram" title="Instagram"></li>
-                    </a>
-                  </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="poster"><img src="data:image/jpeg;base64,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" alt="Alcy Ovalle"></div>
-              <div class="details">
-                <h1>Alcy Ovalle</h1>
-                <h2>Back-End • API • DEV</h2>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                  <span>Desarrollador de Funciones</span>
-                </div>
-                <div class="tags">
-                  <span class="tag yellow">JavaScript</span>
-                  <span class="tag">Node.JS</span>
-                  <span class="tag blue">BoosTrap</span>
-                </div>
-                <p class="desc">
-                  Alcy Ovalle es un talentoso desarrollador especializado en la creación de funciones dinámicas para páginas web.
-                </p>
-                <div class="cast">
-                  <h3>Redes</h3>
-                  <ul>
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138130.png" alt="LinkedIn" title="LinkedIn"></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram" title="Instagram"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-    
-    </section>
+        </section>
 
   
 <!--

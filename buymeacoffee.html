@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs | CoffeeBlog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3054/3054889.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles2.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Space Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#EFE6DD] text-black overflow-x-hidden">
+
+
+
+     <!-- LOading --> 
+
+     <section class="before_loader">
+      <div class="loader">
+          <div class="container">
+              <div class="coffee-header">
+              <div class="coffee-header__buttons"></div>
+              <div class="coffee-header__display"></div>
+              <div class="coffee-header__details"></div>
+          </div>
+          <div class="coffee-medium">
+              <div class="coffe-medium__exit"></div>
+              <div class="coffee-medium__arm"></div>
+              <div class="coffee-medium__liquid"></div>
+              <div class="smoke one"></div>
+              <div class="smoke two"></div>
+              <div class="smoke three"></div>
+              <div class="smoke four"></div>
+          <div class="coffee-medium__cup"></div>
+      
+      </div>
+
+      </div>
+          <h1 class="title_loader">Coffee Blog</h1>
+      </div>
+
+  </section>
+
+
+  
+  <header class="flex justify-between items-center p-6">
+    <a href="indexv2.html"> <h1 class="text-xl font-bold">CoffeeBlog</h1></a>
+    <div class="flex gap-4 items-center">
+      <a href="indexv2.html" class="text-black px-4 py-2 rounded-full hover:text-gray active: transition duration-200">Inicio</a>
+        <a href="#" class="text-black px-4 py-2 rounded-full active: transition duration-200">Blog</a>
+      </div>
+  </header>
+
+<section class="px-6 mt-20 text-center">
+  <h2 class="text-5xl md:text-6xl font-bold leading-tight">
+    Invítame un cafecito<br>
+    <span class="text-neutral-500">y evitemos que me duerma sobre el teclado</span> 😴☕
+  </h2>
+  <p class="mt-6 max-w-2xl mx-auto text-neutral-600">
+    Este sitio funciona con una fórmula mágica: ideas + café. Si te gusta lo que lees, una tacita puede hacer maravillas. Prometo no dormirme (mucho) y seguir escribiendo cosas bonitas para acompañarte.
+  </p>
+  <!--
+  <a href="https://www.buymeacoffee.com/tuusuario" target="_blank" class="mt-6 inline-block bg-[#4B2E2B] text-white px-6 py-3 rounded-full hover:bg-[#A47149] transition duration-200">
+    ☕ Invítame un café
+  </a> -->
+</section>
+
+<section class="mt-16 px-6">
+  <!-- Imagen más pequeña y responsive -->
+  <img 
+    src="/media/svg/Coffee shop-pana.svg" 
+    alt="Robot Arm" 
+    class="w-full max-w-sm md:max-w-md mx-auto rounded-xl"
+    data-aos="fade-up"
+    data-aos-delay="100"
+  >
+</section>
+
+
+  <section class="mt-32 px-6 text-center" id="donar">
+  <h2 class="text-4xl font-bold text-[#4B2E2B] mb-6">Cómprame un café ☕</h2>
+  <p class="text-neutral-600 max-w-xl mx-auto mb-12">Apóyame con una taza de café virtual y ayuda a que este blog siga con más contenido inspirador. ¡Gracias por tu apoyo!</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+    <!-- Opción 1 -->
+    <button onclick="donarCafe('https://www.paypal.com/donate/?hosted_button_id=RJLK694ECSGMA')" class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition border-2 border-[#4B2E2B] hover:bg-[#F3EBE3]" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-semibold text-[#4B2E2B] mb-2">Café Espresso</h3>
+      <p class="text-neutral-600 mb-2">$2 USD</p>
+      <p class="text-sm text-neutral-500">Una recarga rápida para seguir creando</p>
+    </button>
+
+    <!-- Opción 2 -->
+    <button onclick="donarCafe('https://www.paypal.com/donate/?hosted_button_id=RJLK694ECSGMA')" class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition border-2 border-[#4B2E2B] hover:bg-[#F3EBE3]" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-2xl font-semibold text-[#4B2E2B] mb-2">Latte Suave</h3>
+      <p class="text-neutral-600 mb-2">$5 USD</p>
+      <p class="text-sm text-neutral-500">Una inspiración con espuma de cariño</p>
+    </button>
+
+    <!-- Opción 3 -->
+    <button onclick="donarCafe('https://www.paypal.com/donate/?hosted_button_id=RJLK694ECSGMA')" class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition border-2 border-[#4B2E2B] hover:bg-[#F3EBE3]" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-2xl font-semibold text-[#4B2E2B] mb-2">Café Especial</h3>
+      <p class="text-neutral-600 mb-2">$10 USD</p>
+      <p class="text-sm text-neutral-500">Elixir creativo para más ideas brillantes</p>
+    </button>
+  </div>
+
+  <p id="mensajeGracias" class="mt-8 text-green-600 font-semibold hidden">¡Gracias por tu café! ☕✨</p>
+</section>
+
+
+  <footer class="bg-[#EFE6DD] py-10 mt-20">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p class="text-sm text-center md:text-left">
+        © 2025 CoffeeBlog. Hecho con amor y café ☕ por Keifer Joel.
+      </p>
+      <div class="flex gap-4 text-xl">
+        <a href="https://www.instagram.com/createdbykeifer/" class="hover:text-pink-600 transition">📸</a>
+        <a href="https://www.behance.net/joelitojt" class="hover:text-blue-500 transition">🎨</a>
+        <a href="https://github.com/KeiferJoel" class="hover:text-gray-800 transition">💻</a>
+        <a href="https://www.linkedin.com/in/joel-pichardo/" class="hover:text-blue-700 transition">💼</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

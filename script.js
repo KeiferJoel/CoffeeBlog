@@ -74,3 +74,29 @@ window.onload = function() {
     setInterval(mostrarFraseAleatoria, 5000); 
 };
 
+
+ // Definir el género y su emoji correspondiente
+ const generoTipo = "Acción";  // Cambia esto según el género
+
+ const generos = {
+     "Acción": "🔥",
+     "Terror": "👻",
+     "Drama": "🎭",
+     "Comedia": "😂",
+     "Ciencia Ficción": "🚀",
+     
+     "Fantasía": "🧙‍♂️",
+     "Romance": "❤️",
+     "Aventura": "🌍"
+ };
+
+ // Mostrar género con emoji
+ document.getElementById("genero").innerHTML = `${generos[generoTipo] || "📌"} ${generoTipo}`;
+
+function donarCafe(url) {
+  window.open(url, '_blank');
+  const mensaje = document.getElementById('mensajeGracias');
+  mensaje.classList.remove('hidden');
+  mensaje.classList.add('animate-bounce');
+  setTimeout(() => mensaje.classList.remove('animate-bounce'), 1000);
+}

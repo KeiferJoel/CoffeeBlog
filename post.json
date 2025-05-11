@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Mi primera taza de café",
+      "image": "img/cafe1.jpg",
+      "content": "Descubre cómo me enamoré del café en mi primer sorbo y cómo ha cambiado mis mañanas.",
+      "url": "blog1.html"
+    },
+    {
+      "title": "El arte del café",
+      "image": "images/coffee-art.jpg",
+      "content": "Cada taza de café tiene su historia. Conoce más sobre la cultura y el proceso detrás de cada grano.",
+      "url": "blog2.html"
+    },
+    {
+      "title": "Cafés alrededor del mundo",
+      "image": "img/cafe-mundial.jpg",
+      "content": "Un recorrido por los mejores cafés del mundo y lo que los hace únicos.",
+      "url": "blog3.html"
+    }
+  ]
+  

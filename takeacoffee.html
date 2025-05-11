@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take Blog Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+
 </head>
 <body>
 
@@ -40,17 +44,25 @@
         </div>
 
     </section>
+
+<!------------------------------------------------------------>
+
+
     <header class="header">
-        <div class="container">
-            <h1 class="title">Coffee Blog</h1>
+        <h1 class="title">Coffee Blog</h1>
+
+        <section class="container">
+
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Start</a></li>
-                    <li><a href="takeacoffee.html">Take a Coffee</a></li>
+                    <li><a class="active" href="takeacoffee.html">Take a Coffee</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+        </section>
     </header>
+
     <main class="container">
         <section class="gallery">
             <div class="container">
@@ -60,9 +72,13 @@
         
             <script>
                 const blogs = [
-                    { title: "Blog 1", date: "3/13/2025", description: "Descripción del blog 1.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fHx8fHwyfHx8fA%3D%3D", link: "blog1.html" },
-                    { title: "Blog 2", date: "3/13/2025", description: "Descripción del blog 2.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fGVufDB8fHx8fA%3D%3D", link: "#" },
-                    { title: "Blog 3", date: "3/13/2025", description: "Descripción del blog 3.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fGVufDB8fHx8fA%3D%3D", link: "#" },
+                    { title: "La Importancia de Tener Metas a Corto Plazo", genre:"🌱Desarrollo Personal", date: "3/14/2025", description: "Descripción del blog 1.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fHx8fHwyfHx8fA%3D%3D", link: "blog-1.html" },
+                    { title: "La Importancia de Tener Metas a Corto Plazo", genre:"🧠 Mentalidad y Perspectiva", date: "3/14/2025", description: "Descripción del blog 1.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fHx8fHwyfHx8fA%3D%3D", link: "blog-1.html" },
+                    { title: "La Importancia de Tener Metas a Corto Plazo", genre:"🗂️ Productividad y Organización", date: "3/14/2025", description: "Descripción del blog 1.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fHx8fHwyfHx8fA%3D%3D", link: "blog-1.html" },
+                    { title: "La Importancia de Tener Metas a Corto Plazo", genre:"💭 Reflexión y Emocióna", date: "3/14/2025", description: "Descripción del blog 1.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fHx8fHwyfHx8fA%3D%3D", link: "blog-1.html" },
+                    
+                    
+            
                     { title: "Blog 4", date: "3/13/2025", description: "Descripción del blog 4.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fGVufDB8fHx8fA%3D%3D", link: "#" },
                     { title: "Blog 5", date: "3/13/2025", description: "Descripción del blog 5.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fGVufDB8fHx8fA%3D%3D", link: "#" },
                     { title: "Blog 6", date: "3/13/2025", description: "Descripción del blog 6.", image: "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx8fGVufDB8fHx8fA%3D%3D", link: "#" }
@@ -76,9 +92,10 @@
                     
                     blogCard.innerHTML = `
                         <a href="${blog.link}">
-                            <img src="${blog.image}" alt="${blog.title}">
+                            <img class="imagen_blog" src="${blog.image}" alt="${blog.title}">
                             <h2 class="title_blog">${blog.title}</h2>
                         </a>
+                        <strong class="tag_genre_blog">${blog.genre}</strong>
                         <p>${blog.date}</p>
                         <p>${blog.description}</p>
                         <a href="${blog.link}" class="read-more">Leer más...</a>
@@ -87,6 +104,7 @@
                     blogContainer.appendChild(blogCard);
                 });
             </script>
+            
         </section>
     </main> <!--
     <footer>

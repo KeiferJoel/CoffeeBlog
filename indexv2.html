@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoffeeBlog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3054/3054889.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles2.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Space Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#EFE6DD] text-black overflow-x-hidden">
+
+     <!-- LOading --> 
+
+     <section class="before_loader">
+      <div class="loader">
+          <div class="container">
+              <div class="coffee-header">
+              <div class="coffee-header__buttons"></div>
+              <div class="coffee-header__display"></div>
+              <div class="coffee-header__details"></div>
+          </div>
+          <div class="coffee-medium">
+              <div class="coffe-medium__exit"></div>
+              <div class="coffee-medium__arm"></div>
+              <div class="coffee-medium__liquid"></div>
+              <div class="smoke one"></div>
+              <div class="smoke two"></div>
+              <div class="smoke three"></div>
+              <div class="smoke four"></div>
+          <div class="coffee-medium__cup"></div>
+      
+      </div>
+
+      </div>
+          <h1 class="title_loader">Coffee Blog</h1>
+      </div>
+
+  </section>
+
+  <header class="flex justify-between items-center p-6">
+    <a href="indexv2.html"> <h1 class="text-xl font-bold">CoffeeBlog</h1></a>
+    <div class="flex gap-4 items-center">
+        <a href="/takeacoffeev2.html" class="text-black px-4 py-2 rounded-full hover:text-gray active: transition duration-200">Blog</a>
+        <a href="/buymeacoffee.html" class="bg-[#4B2E2B]  text-white px-4 py-2 rounded-full hover:bg-[#A47149]  active:bg-[#4B2E2B] transition duration-200">Comprame un ☕</a>
+      </div>
+
+  </header>
+
+  <section class="px-6 mt-20">
+    <h2 class="text-5xl md:text-7xl font-bold leading-tight">
+        Antes de leer, toma un cafecito<br>
+        <span class="text-neutral-500">y disfruta de nuestro blog</span>  <span class="text-7xl">☕</span>
+      </h2>
+      
+    </h2>
+    <p class="mt-6 max-w-lg text-neutral-600">CoffeeBlog es el lugar perfecto para disfrutar de una buena lectura acompañado de tu café favorito. Te traemos historias, reflexiones e inspiración para que tu día comience con la dosis perfecta de entretenimiento y café.</p>
+<a href="/takeacoffeev2.html" class="mt-4 inline-block underline text-sm">→ Leer Ahora</a>
+
+  </section>
+
+  <section class="mt-16 px-6">
+  
+    <!--Ilustraciones o videos-->
+    <img src="/media/svg/Coffee break-cuate.svg" alt="Robot Arm" class="w-full max-w-4xl mx-auto rounded-lg" data-aos="fade-up">
+  </section>
+
+  <div id="svg-section" class="opacity-0 translate-x-[-50px] transition-all duration-700 ease-out mt-20 flex items-center justify-center gap-10 flex-wrap  ">
+    <!-- Ilustración SVG -->
+    <img src="/media/svg/IceCreamDoodle.svg" alt="Coffee icon" class="w-full max-w-md rounded-lg" />
+  
+    <!-- Redes sociales -->
+    <div class="text-neutral-700 text-lg max-w-sm">
+      <p class="mb-4">Descubre más mientras tomas tu café ☕</p>
+      <ul class="space-y-3">
+        <li>🔸 <strong>Instagram:</strong> <a href="https://www.instagram.com/createdbykeifer/" class="underline hover:text-pink-600" data-aos="fade-left" data-aos-delay="100"> @createdbykeifer</a></li>
+        <li>🔸 <strong>Behance:</strong> <a href="https://www.behance.net/joelitojt" class="underline hover:text-blue-500" data-aos="fade-left" data-aos-delay="100"> Keifer Joel</a></li>
+        <li>🔸 <strong>GitHub:</strong> <a href="https://github.com/KeiferJoel" class="underline hover:text-gray-800" data-aos="fade-left" data-aos-delay="100"> Joel Pichardo (DEV)</a></li>
+        <li>🔸 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joel-pichardo/" class="underline hover:text-blue-700" data-aos="fade-left" data-aos-delay="100"> Joel Pichardo</a></li>
+      </ul>
+    </div>
+  </div>
+
+ <!-- Sección motivadora sin SVG, texto más despegado de la derecha -->
+<!-- Sección motivadora animada con AOS -->
+<section class="flex flex-col items-end px-6 mt-20">
+  <div
+    class="w-full md:w-3/4 text-right pr-10"
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-once="true"
+  >
+    <h2 class="text-5xl md:text-6xl font-bold leading-tight">
+      Tómate otro cafecito ☕<br>
+      <span class="text-neutral-500">y deja que las palabras te inspiren</span>
+    </h2>
+    <p class="mt-6 text-neutral-600 max-w-lg ml-auto">
+      A veces, una buena lectura con café es justo lo que necesitas para recargar tu mente. Explora nuestras historias, deja que te inspiren y empieza tu día con la mejor energía. ✨
+    </p>
+    <a href="#" class="mt-4 inline-block underline text-sm">→ Quieres contarnos una anecdota?</a>
+  </div>
+</section>
+
+
+<!-- SVG decorativo debajo -->
+<section class="mt-16 px-6">
+  <img src="/media/svg/ZombieingDoodle.svg" alt="Coffee break" class="w-full max-w-4xl mx-auto rounded-lg">
+</section>
+
+
+  <section class="mt-16 px-6">
+  
+    <!--Ilustraciones o videos
+    <img src="/media/svg/" alt="Robot Arm" class="w-full max-w-4xl mx-auto rounded-lg">
+  </section>
+-->
+
+
+  <div id="svg-section" class="opacity-0 translate-x-[-50px] transition-all duration-700 ease-out mt-20 flex items-center justify-center gap-10 flex-wrap">
+    <!-- Ilustración SVG -->
+    <img src="/media/svg/IceCreamDoodle.svg" alt="Coffee icon" class="w-full max-w-md rounded-lg" />
+  
+    <!-- Redes sociales -->
+    <div class="text-neutral-700 text-lg max-w-sm">
+      <p class="mb-4">Descubre más mientras tomas tu café ☕</p>
+      <ul class="space-y-3">
+        <li>🔸 <strong>Instagram:</strong> <a href="#" class="underline hover:text-pink-600"> @tuUsuario</a></li>
+        <li>🔸 <strong>Behance:</strong> <a href="#" class="underline hover:text-blue-500"> /tuPerfil</a></li>
+        <li>🔸 <strong>GitHub:</strong> <a href="#" class="underline hover:text-gray-800"> github.com/tuUsuario</a></li>
+        <li>🔸 <strong>LinkedIn:</strong> <a href="#" class="underline hover:text-blue-700"> linkedin.com/in/tuUsuario</a></li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+          entry.target.classList.remove('translate-x-[-50px]');
+          entry.target.classList.add('opacity-100');
+          entry.target.classList.add('translate-x-0');
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    const element = document.getElementById('svg-section');
+    observer.observe(element);
+  </script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+  <footer class="bg-[#EFE6DD] py-10 mt-20">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+      
+      <!-- Texto del footer -->
+      <p class="text-sm text-center md:text-left">
+        © 2025 CoffeeBlog. Hecho con amor y café ☕ por Keifer Joel.
+      </p>
+  
+      <!-- Redes sociales -->
+      <div class="flex gap-4 text-xl">
+        <a href="#" class="hover:text-pink-600 transition">📸</a> <!-- Instagram -->
+        <a href="#" class="hover:text-blue-500 transition">🎨</a> <!-- Behance -->
+        <a href="#" class="hover:text-gray-800 transition">💻</a> <!-- GitHub -->
+        <a href="#" class="hover:text-blue-700 transition">💼</a> <!-- LinkedIn -->
+      </div>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>
