@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+-document.addEventListener("DOMContentLoaded", function () {
     const loader = document.querySelector(".loader");
     const before_loader = document.querySelector("before_loader");
 
