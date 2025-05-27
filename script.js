@@ -84,7 +84,6 @@ window.onload = function() {
      "Drama": "🎭",
      "Comedia": "😂",
      "Ciencia Ficción": "🚀",
-     
      "Fantasía": "🧙‍♂️",
      "Romance": "❤️",
      "Aventura": "🌍"
